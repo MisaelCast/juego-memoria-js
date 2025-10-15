@@ -1,6 +1,6 @@
 # juego-memoria-js
 
-Proyecto desarrollado como práctica de JavaScript DOM
+Proyecto desarrollado como práctica de JavaScript DOM.
 El objetivo del juego es emparejar todas las cartas con el mismo emoji utilizando la menor cantidad de movimientos posibles.
 
 ---
