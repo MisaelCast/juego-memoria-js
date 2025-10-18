@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis Proyectos</title>
+
+    <style>
+      body {
+        /* El degradado solicitado */
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        font-family: "Arial", sans-serif;
+        color: white;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        text-align: center;
+        padding: 40px;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.3
+        ); /* Un fondo semitransparente para el contenido */
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        max-width: 900px;
+        width: 90%;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      p {
+        font-size: 1.1em;
+        margin-bottom: 30px;
+      }
+
+      .proyectos-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .proyecto-card {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        text-decoration: none; /* Quita el subrayado del enlace */
+        padding: 20px;
+        border-radius: 10px;
+        flex: 1 1 300px;
+        min-height: 120px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        text-align: left;
+      }
+
+      .proyecto-card:hover {
+        transform: translateY(-5px);
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .proyecto-card h2 {
+        margin-top: 0;
+        font-size: 1.5em;
+      }
+
+      .proyecto-card p {
+        margin-bottom: 0;
+        font-size: 0.9em;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Galería de Proyectos</h1>
+      <p>Selecciona un proyecto para verlo:</p>
+
+      <div class="proyectos-grid">
+        <a href="../JUEGO-MEMORIA-JS/index.html" class="proyecto-card">
+          <h2>Juego de Memoria 🧠</h2>
+          <p>Un divertido juego de cartas para ejercitar tu memoria.</p>
+        </a>
+
+        <a href="../practicas-api/Pagina.html" class="proyecto-card">
+          <h2>LABORATORIO 01 - FETCH API</h2>
+          <p>Practicas APIs</p>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

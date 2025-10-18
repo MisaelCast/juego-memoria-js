@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reporte de Prácticas</title>
+    <style>
+      body {
+        /* Degradado solicitado */
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh; /* Ocupa toda la altura de la vista */
+        display: flex; /* Para centrar el contenido vertical y horizontalmente */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Asegura que los hijos (h1, div.menu) se apilen si no usamos un contenedor */
+      }
+
+      .container {
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.1
+        ); /* Fondo semi-transparente */
+        padding: 40px 60px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        text-align: center;
+      }
+
+      h1 {
+        color: #ffffff;
+        margin-bottom: 30px;
+        font-size: 2.2em;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      }
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch; /* Estira los botones para que tengan el mismo ancho */
+        min-width: 250px; /* Ancho mínimo para los botones */
+      }
+
+      .boton {
+        text-decoration: none;
+        background-color: #ffffff; /* Botones blancos */
+        color: #4c4c4c; /* Texto gris oscuro */
+        padding: 15px 30px;
+        border-radius: 8px; /* Bordes un poco más suaves */
+        font-size: 1.1em;
+        font-weight: 600;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Sombra ligera para profundidad */
+      }
+
+      .boton:hover {
+        background-color: #f0f0f0; /* Color al pasar el mouse */
+        transform: translateY(-2px); /* Pequeño efecto de elevación */
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>LABORATORIO 01 - FETCH API</h1>
+
+      <div class="menu">
+        <a class="boton" href="ejercicio1.html"> Ejercicio 1</a>
+        <a class="boton" href="ejercicio2.html"> Ejercicio 2</a>
+        <a class="boton" href="ejercicio3.html"> Ejercicio 3</a>
+        <a class="boton" href="ejercicio4.html"> Ejercicio 4</a>
+      </div>
+    </div>
+  </body>
+</html>
