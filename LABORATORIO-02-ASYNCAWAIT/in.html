@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Prácticas - Laboratorio 02</title>
+
+    <style>
+        body {
+            /* El degradado solicitado: Morado-Azul a Morado Oscuro */
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: "Arial", sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            /* Centra el contenido vertical y horizontalmente */
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+            /* Fondo semitransparente oscuro para la caja principal */
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            max-width: 900px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            /* Sombra en el texto para destacar */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        p.intro {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+
+        .proyectos-grid {
+            /* Muestra las tarjetas en una cuadrícula flexible */
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            list-style: none; /* Quita los puntos de la lista */
+            padding: 0;
+        }
+
+        .proyecto-card {
+            /* Estilo de la "tarjeta" de cada ejercicio */
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none; 
+            padding: 20px;
+            border-radius: 10px;
+            /* Define el tamaño de la tarjeta para la cuadrícula */
+            flex: 1 1 400px; 
+            min-height: 100px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            text-align: left;
+            display: block; /* Importante para que el <a> ocupe todo el espacio */
+        }
+
+        .proyecto-card:hover {
+            /* Efecto al pasar el ratón */
+            transform: translateY(-5px);
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .proyecto-card h2 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 1.5em;
+        }
+
+        .proyecto-card p.description {
+            margin-bottom: 0;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>LABORATORIO 02 💻</h1>
+        <h2>Async/Await y Fetch API</h2>
+        
+        <p class="intro">Selecciona el ejercicio que deseas revisar. Cada tarjeta te llevará a la práctica correspondiente en el laboratorio.</p>
+
+        <nav class="proyectos-grid">
+            
+            <a href="/juego-memoria-js/LABORATORIO-02-ASYNCAWAIT/ejercicio1_async.html" class="proyecto-card">
+                <h2>Ejercicio 1</h2>
+                <p class="description">Introducción a la sintaxis básica de `async` y `await`.</p>
+            </a>
+            
+            <a href="/juego-memoria-js/LABORATORIO-02-ASYNCAWAIT/ejercicio2_async.html" class="proyecto-card">
+                <h2>Ejercicio 2</h2>
+                <p class="description">Manejo de errores utilizando `try...catch` con funciones asíncronas.</p>
+            </a>
+            
+            <a href="/juego-memoria-js/LABORATORIO-02-ASYNCAWAIT/ejercicio3_async.html" class="proyecto-card">
+                <h2>Ejercicio 3</h2>
+                <p class="description">Ejecución de múltiples promesas en paralelo con `Promise.all()`.</p>
+            </a>
+            
+            <a href="/juego-memoria-js/LABORATORIO-02-ASYNCAWAIT/ejercicio4_async.html" class="proyecto-card">
+                <h2>Ejercicio 4</h2>
+                <p class="description">Consumo de APIs externas utilizando la función `fetch`.</p>
+            </a>
+            </nav>
+
+        <p class="description" style="margin-top: 30px;">Ubicación: UNIDAD_3 / LABORATORIO-02-ASYNCAWAIT</p>
+    </div>
+
+</body>
+</html>
